@@ -1,4 +1,4 @@
-bool comp(pair<int,int> &pr1, pair <int,int> &pr2){
+static bool comp(pair<int,int> &pr1, pair <int,int> &pr2){
     if (pr1.second < pr2.second){
         return true;
     }
