@@ -1,3 +1,25 @@
+/*
+Given two strings X and Y of lengths m and n respectively, find the length of the smallest string which has both, X and Y as its sub-sequences.
+Note: X and Y can have both uppercase and lowercase letters.
+
+Example 1
+
+Input:
+X = abcd, Y = xycd
+Output: 6
+Explanation: Shortest Common Supersequence
+would be abxycd which is of length 6 and
+has both the strings as its subsequences.
+Example 2
+
+Input:
+X = efgh, Y = jghi
+Output: 6
+Explanation: Shortest Common Supersequence
+would be ejfghi which is of length 6 and
+has both the strings as its subsequences.
+*/
+
 int dp[101][101];
 int lcs(string s1, string s2, int i, int j)
 {
