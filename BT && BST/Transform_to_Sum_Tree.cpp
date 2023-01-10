@@ -1,11 +1,12 @@
-int SumTree(Node * &root){
+int transform(Node * root) {
         if (root==NULL) return 0;
-        int a = SumTree(root->left);
-        int b = SumTree(root->right);
-        int x = root->data;
+        int a = transform(root->left);
+        int b = transform(root->right);
+        int d = root->data;
         root->data = a+b;
-        return root->data+x;
+        return (a+b+d);
     }
-    void toSumTree(Node *node) {
-        SumTree(node);
+    void toSumTree(Node *node)
+    {
+        transform(node);
     }
